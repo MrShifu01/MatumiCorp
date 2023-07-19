@@ -1,30 +1,81 @@
-import { Container, Nav, Navbar, NavDropdown} from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+
+const ScrollListener = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return isScrolled;
+};
 
 function Header() {
+  const isScrolled = ScrollListener();
+
   return (
-    <Navbar expand="lg" className='bg-primary' variant='primary'>
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <div>
+      <Navbar
+        expand="lg"
+        className={`navbar ${isScrolled ? 'bg-light shadow-sm navbar-light' : 'navbar-dark'} fixed-top`}
+        variant="primary"
+      >
+        <div className='container-xxl'>
+          <Navbar.Brand className={`text-2xl ${isScrolled ? 'text-primary' : 'text-light'}`} href="#home">
+            <a href='/'><img style={{width: '100px'}} src={`${isScrolled ? 'black.png' : 'white.png'}`} alt='logo'/></a>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto pt-3">
+            <Nav.Link
+                className={`text-uppercase ${isScrolled ? 'text-primary' : 'text-light'}`}
+                href="#about us"
+              >
+                About us
+              </Nav.Link>
+              <Nav.Link
+                className={`text-primary text-uppercase ${isScrolled ? 'text-primary' : 'text-light'}`}
+                href="#services"
+              >
+                Services
+              </Nav.Link>
+              <Nav.Link
+                className={`text-primary text-uppercase ${isScrolled ? 'text-primary' : 'text-light'}`}
+                href="#Transactions"
+              >
+                Transactions
+              </Nav.Link>
+              <Nav.Link
+                className={`text-primary text-uppercase ${isScrolled ? 'text-primary' : 'text-light'}`}
+                href="#Team"
+              >
+                Team
+              </Nav.Link>
+              <Nav.Link
+                className={`text-primary text-uppercase ${isScrolled ? 'text-primary' : 'text-light'}`}
+                href="#Team"
+              >
+                Contact
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </div>
+      </Navbar>
+    </div>
   );
 }
 

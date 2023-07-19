@@ -4,5 +4,45 @@
 
 body {
   margin: 0;
-  background-color: #444;
+  background-color: #eee;
+}
+
+.hero-image {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../public/heroImg.jpeg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  z-index: 1000;
+  top: 20%;
+  right: 50%;
+  color: white;
+  margin-left: 3rem;
+  margin-top: 7rem;
+  padding-right: 10rem;
+  transform: translateX(20%);
+}
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.heading {
+  font-size: 4rem;
+}
+
+@media (max-width: 1000px) {
+  .hero-text {
+    text-align: center;
+    top: 50%; /* Change from top: 0 to top: 50% */
+    transform: translate(50%, -50%); /* Add this line to vertically and horizontally center the element */
+    margin: 0;
+    padding: 0;
+  }
 }/*# sourceMappingURL=App.css.map */

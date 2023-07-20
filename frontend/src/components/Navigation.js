@@ -74,7 +74,7 @@ function Navigation() {
                   to="about"
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={-90}
                   duration={500}
                 >
                   About us
@@ -91,7 +91,7 @@ function Navigation() {
                   to="services"
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={-90}
                   duration={500}
                 >
                   Services

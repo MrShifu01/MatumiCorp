@@ -10,7 +10,7 @@ const Services = () => {
             <hr class="w-25 mx-auto mb-7 text-white"/>
           </div>
         </div>
-        <div className='row text-white'>
+        <div className='row pb-6 text-white'>
           <div className='col-md-6 p-5'>
             <h4 className='text-uppercase text-center'>Sell-side mandates</h4>
             <p className='text-center w-75 m-auto'>Sell-side mandates with mid-sized companies (enterprise value of between R50 million and R3 billion) seeking a minority or majority investor and/or shareholders seeking a partial or total exit from the business.</p>

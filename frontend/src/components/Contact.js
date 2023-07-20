@@ -11,7 +11,7 @@ const Contact = () => {
           <div className="col-md-8 offset-md-2">
             <div className="text-center mb-5">
               <h2 className="about-title text-uppercase fw-bold text-light">Contact</h2>
-              <hr className="w-25 mx-auto" />
+              <hr className="w-25 mx-auto text-secondary" />
               <p>
                 <strong>Tel:</strong> (011) 283 7700
               </p> 
@@ -24,8 +24,8 @@ const Contact = () => {
               <p>
                 <strong>Email:</strong> <a className='email-link' href="mailto:jane@matumicorp.co.za">jane@matumicorp.co.za</a> | <a className='email-link' href="mailto:patrick@matumicorp.co.za">patrick@matumicorp.co.za</a> | <a className='email-link' href="mailto:philip@matumicorp.co.za">philip@matumicorp.co.za</a>
               </p>
-              <hr className="w-25 mx-auto mb-5" />
-              <h2 className="mb-4">Get in Touch</h2>
+              <hr className="w-25 mx-auto mb-5 text-secondary" />
+              <h2 className="mb-4 text-light">Get in Touch</h2>
               <p className="lead">
                 We welcome all inquiries and would be delighted to hear from
                 you. Please don't hesitate to reach out to us for any questions

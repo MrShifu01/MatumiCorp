@@ -6,7 +6,7 @@ const About = () => {
         <div className='container-fluid'>
             <div className='row  pt-6'>
                 <div className='col-md-6 offset-md-3'>
-                    <h2 className='about-title text-center'>History</h2>
+                    <h2 className='about-title text-center text-dark'>History</h2>
                     <hr class="w-25 mx-auto mb-5"/>
                     <p>The company was founded in 2000 by Jane Ashburner and Patrick Glyn.</p>
 
@@ -26,7 +26,7 @@ const About = () => {
                     <p><strong>Referrals: </strong>Our excellent execution rate and strong relationship with clients have enabled Matumi to thrive over the years
                         based purely on referrals and repeat business from satisfied clients.</p>
 
-                    <h2 className='about-title text-center mt-6'>Why Matumi</h2>
+                    <h2 className='about-title text-center mt-6 text-dark'>Why Matumi</h2>
                     <hr class="w-25 mx-auto mb-5"/>
                     <ul className='about-list'>
                         <li className='about-list-item'>In-depth pre-engagement analysis of the client’s business and transaction objectives and how realistic and

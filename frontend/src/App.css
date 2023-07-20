@@ -7,20 +7,38 @@ body {
   background-color: #eee;
 }
 
+.hero-container {
+  position: relative;
+  height: 100vh; /* You can adjust the height to your preference */
+}
+
 .hero-image {
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../public/heroImg.jpeg");
-  height: 50%;
-  background-position: center;
+  background-image: url("../public/heroImg3.jpeg");
+  height: 100%;
+  background-position: center -30px; /* Adjust the vertical positioning */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(-1); /* Flip only the background image */
+}
+
+.hero-overlay {
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .hero-text {
   position: absolute;
   z-index: 1000;
-  top: 20%;
+  top: 10%;
   right: 50%;
   color: white;
   margin-left: 3rem;

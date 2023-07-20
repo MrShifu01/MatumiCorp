@@ -7,28 +7,70 @@ body {
     background-color: #eee;
 }
 
-
-.hero-image {
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../public/heroImg.jpeg");
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+.hero-container {
     position: relative;
+    height: 100vh; /* You can adjust the height to your preference */
+  }
+  
+.hero-image {
+background-image: url("../public/heroImg3.jpeg");
+height: 100%;
+background-position: center -30px; /* Adjust the vertical positioning */
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+transform: scaleX(-1); /* Flip only the background image */
 }
 
-.hero-text {
+.hero-overlay {
+background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+}
+  
+  
+  .hero-text {
     position: absolute;
     z-index: 1000;
-    top: 20%;
+    top: 10%;
     right: 50%;
     color: white;
     margin-left: 3rem;
     margin-top: 7rem;
     padding-right: 10rem;
     transform: translateX(20%);
-}
+  }
+  
+
+// .hero-image {
+//     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../public/heroImg2.jpeg");
+//     height: 50%;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-attachment: fixed;
+//     background-size: cover;
+//     position: relative;
+//     transform: scaleX(-1);
+// }
+
+// .hero-text {
+//     position: absolute;
+//     z-index: 1000;
+//     top: 20%;
+//     right: 50%;
+//     color: white;
+//     margin-left: 3rem;
+//     margin-top: 7rem;
+//     padding-right: 10rem;
+//     transform: translateX(20%);
+// }
 
 .navbar {
     transition: all 0.3s ease-in-out;

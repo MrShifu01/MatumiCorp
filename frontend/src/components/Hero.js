@@ -15,7 +15,7 @@ const Hero = () => {
           Matumi is a boutique M&A advisory firm specializing in end-to-end merger and acquisition services across various sectors, including healthcare, logistics, and technology.
         </p>
         <div>
-          <button className='btn btn-lg btn-light mt-2' variant="light" size="lg">
+          <button className='btn btn-lg btn-primary mt-2' variant="light" size="lg">
             Learn More
           </button>
         </div>

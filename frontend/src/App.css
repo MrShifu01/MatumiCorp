@@ -94,6 +94,21 @@ body {
   margin-bottom: 1rem;
 }
 
+.carousel-image {
+  width: 100%;
+  max-height: 400px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.custom-placeholder::-moz-placeholder {
+  color: var(--bs-light);
+}
+
+.custom-placeholder::placeholder {
+  color: var(--bs-light);
+}
+
 @media (max-width: 1000px) {
   .hero-text {
     text-align: center;

@@ -5,6 +5,9 @@ import Hero from './Hero';
 import About from './About';
 import InfoSection1 from './InfoSection1';
 import Services from './Services';
+import Transactions from './Transactions';
+import Team from './Team';
+import Contact from './Contact';
 
 const ScrollListener = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -103,7 +106,16 @@ function Navigation() {
                 }`}
                 href="#Transactions"
               >
-                Transactions
+               <Link
+                  activeClass="active-link"
+                  to="transactions"
+                  spy={true}
+                  smooth={true}
+                  offset={-90}
+                  duration={500}
+                >
+                  Transactions
+                </Link>
               </Nav.Link>
               <Nav.Link
                 className={`text-primary text-uppercase ${
@@ -111,7 +123,16 @@ function Navigation() {
                 }`}
                 href="#Team"
               >
-                Team
+                <Link
+                  activeClass="active-link"
+                  to="team"
+                  spy={true}
+                  smooth={true}
+                  offset={-90}
+                  duration={500}
+                >
+                  Team
+                </Link>
               </Nav.Link>
               <Nav.Link
                 className={`text-primary text-uppercase ${
@@ -129,6 +150,9 @@ function Navigation() {
       <InfoSection1 />
       <About />
       <Services />
+      <Transactions/>
+      <Team />
+      <Contact />
     </div>
   );
 }

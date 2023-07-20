@@ -13,7 +13,7 @@ body {
 }
 
 .hero-image {
-  background-image: url("../public/heroImg3.jpeg");
+  background-image: url("../public/heroImg31.png");
   height: 100%;
   background-position: center -30px; /* Adjust the vertical positioning */
   background-repeat: no-repeat;
@@ -23,9 +23,15 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  transform: scaleX(-1); /* Flip only the background image */
 }
 
+@media (max-width: 1650px) {
+  .hero-image {
+    background-position: center center; /* Center the image vertically and horizontally */
+    background-size: cover;
+    background-attachment: scroll; /* Change from fixed to scroll */
+  }
+}
 .hero-overlay {
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
   height: 100%;
@@ -127,9 +133,8 @@ body {
   gap: 3rem;
 }
 
-.contact-input:focus {
-  outline: none;
-  border: none;
+.form-control:focus {
+  box-shadow: none !important;
 }
 
 @media (max-width: 1000px) {

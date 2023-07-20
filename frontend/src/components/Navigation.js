@@ -140,7 +140,16 @@ function Navigation() {
                 }`}
                 href="#Team"
               >
-                Contact
+                <Link
+                  activeClass="active-link"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-90}
+                  duration={500}
+                >
+                  Contact
+                </Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

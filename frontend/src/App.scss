@@ -86,6 +86,10 @@ transform: translateX(20%);
     text-decoration: none;
     color: var(--bs-dark);
   }
+
+  .email-link{ 
+    color: var(--bs-info);
+  }
   
   .active-link::before {
     content: '';
@@ -130,8 +134,13 @@ transform: translateX(20%);
     object-fit: scale-down;
   }
 
-.custom-placeholder::placeholder {
-    color: var(--bs-light);
+.address-link {
+    color: var(--bs-secondary);
+}
+
+.footer-link {
+    text-decoration: underline;
+    color: var(--bs-dark);
 }
 
 @media (max-width: 1000px) {

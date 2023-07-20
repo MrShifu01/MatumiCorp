@@ -2,7 +2,7 @@ import React from 'react'
 
 const InfoSection1 = () => {
   return (
-    <section className='info-section1 bg-primary' id='info-section1'>
+    <section className='info-section1 bg-dark bg-gradient' id='info-section1'>
         <div className='container'>
             <div className='row'>
                 <div className='col mx-auto text-center'>

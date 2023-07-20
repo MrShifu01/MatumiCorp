@@ -57,6 +57,10 @@ body {
   color: var(--bs-dark);
 }
 
+.email-link {
+  color: var(--bs-info);
+}
+
 .active-link::before {
   content: "";
   position: absolute;
@@ -101,12 +105,13 @@ body {
      object-fit: scale-down;
 }
 
-.custom-placeholder::-moz-placeholder {
-  color: var(--bs-light);
+.address-link {
+  color: var(--bs-secondary);
 }
 
-.custom-placeholder::placeholder {
-  color: var(--bs-light);
+.footer-link {
+  text-decoration: underline;
+  color: var(--bs-dark);
 }
 
 @media (max-width: 1000px) {

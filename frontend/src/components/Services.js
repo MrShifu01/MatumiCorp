@@ -2,12 +2,12 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <section className='services bg-dark bg-gradient' id='services'>
+    <section className='services bg-primary bg-gradient' id='services'>
       <div className='container'>
         <div className='row pt-6'>
           <div className='col-md-6 offset-md-3'>
             <h2 className='text-white about-title text-center'>Our Services Include</h2>
-            <hr class="w-25 mx-auto mb-7 text-white"/>
+            <hr class="w-25 mx-auto mb-6 text-white"/>
           </div>
         </div>
         <div className='row pb-6 text-white'>

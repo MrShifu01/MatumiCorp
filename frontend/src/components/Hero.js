@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll'
 
 const Hero = () => {
   return (
@@ -15,9 +16,18 @@ const Hero = () => {
           Matumi is a boutique M&A advisory firm specializing in end-to-end merger and acquisition services across various sectors, including healthcare, logistics, and technology.
         </p>
         <div>
-          <button className='btn btn-lg btn-primary mt-2' variant="light" size="lg">
-            Learn More
-          </button>
+        <Link
+            activeClass='active'
+            to='about'
+            spy={true}
+            smooth={true}
+            offset={-90} // Offset to adjust the scrolling position, you can change this as needed
+            duration={500} // Duration of the scroll animation
+          >
+            <button className='btn btn-lg btn-primary mt-2' variant="light" size="lg">
+              Learn More
+            </button>
+          </Link>
         </div>
       </div>
     </div>

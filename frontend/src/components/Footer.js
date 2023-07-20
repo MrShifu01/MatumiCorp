@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='row'>
-                <div className='d-flex gap-6 justify-content-center mb-5 col-md-8 offset-md-2'>
+                <div className='footer-wrapper d-flex justify-content-center mb-5 col-md-8 offset-md-2'>
                     <Link
                         className="footer-link"
                       to="about"

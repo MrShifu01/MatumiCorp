@@ -51,11 +51,11 @@ function Navigation() {
             href="#hero"
           >
             <Link
-            to='hero'
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
             >
               <img
                 style={{ width: "100px" }}
@@ -65,7 +65,10 @@ function Navigation() {
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav" className={`${isScrolled ? "" : "dark-bg"}`}>
+          <Navbar.Collapse
+            id="basic-navbar-nav"
+            className={`${isScrolled ? "" : "dark-bg"}`}
+          >
             <Nav className="ms-auto pt-3">
               <Nav.Link
                 className={`text-uppercase ${
@@ -107,7 +110,7 @@ function Navigation() {
                 }`}
                 href="#Transactions"
               >
-               <Link
+                <Link
                   activeClass="active-link"
                   to="transactions"
                   spy={true}
@@ -139,7 +142,7 @@ function Navigation() {
                 className={`text-dark text-uppercase ${
                   isScrolled ? "text-dark" : "text-light"
                 }`}
-                href="#Team"
+                href="#Contact"
               >
                 <Link
                   activeClass="active-link"
@@ -160,8 +163,8 @@ function Navigation() {
       <InfoSection1 />
       <About />
       <Services />
-      <Transactions/>
-      <InfoSection2/>
+      <Transactions />
+      <InfoSection2 />
       <Team />
       <Contact />
     </div>

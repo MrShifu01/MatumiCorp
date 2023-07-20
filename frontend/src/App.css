@@ -137,6 +137,15 @@ body {
   box-shadow: none !important;
 }
 
+.footer-wrapper {
+  gap: 3rem;
+}
+
+@media (max-width: 767px) {
+  .footer-wrapper {
+    gap: 1.5rem;
+  }
+}
 @media (max-width: 1000px) {
   .hero-text {
     text-align: center;

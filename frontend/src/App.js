@@ -1,16 +1,11 @@
 import './App.css';
 import './custom.scss';
-
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Header/>
-        <Hero/>
-      </header>
+        <Navigation/>
     </div>
   );
 }

@@ -10,7 +10,7 @@ const Team = () => {
                 <hr class="w-25 mx-auto mb-5 text-black"/>
                 </div>
             </div>
-            <div className='row m-auto pt-5'>
+            <div className='row m-auto py-5'>
             
             {/* Jane */}
                 <div className='col-md-3 col-sm-6 mb-4'>

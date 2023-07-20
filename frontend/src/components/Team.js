@@ -6,7 +6,7 @@ const Team = () => {
         <div className='container-xxl'>
             <div className='row'>
                 <div className='col-md-6 offset-md-3'>
-                <h2 className='about-title text-center text-dark my-5'>Team</h2>
+                <h2 className='about-title text-center text-dark mt-6'>Team</h2>
                 <hr class="w-25 mx-auto mb-5 text-black"/>
                 </div>
             </div>

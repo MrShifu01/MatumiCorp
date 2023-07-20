@@ -5,7 +5,7 @@ const Contact = () => {
   const address = "The Reserve, 54 Melville Rd, Illovo, Johannesburg"
 
   return (
-    <section id="contact" className="contact text-bg-dark bg-gradient py-5">
+    <section id="contact" className="contact text-bg-primary bg-gradient py-6">
       <div className="container">
         <div className="row">
           <div className="col-md-8 offset-md-2">
@@ -60,7 +60,7 @@ const Contact = () => {
               </div>
 
               <div className="d-grid">
-                <button type="submit" className="btn btn-lg btn-primary">
+                <button type="submit" className="btn btn-lg btn-dark">
                   Submit
                 </button>
               </div>

@@ -8,6 +8,7 @@ import Services from './Services';
 import Transactions from './Transactions';
 import Team from './Team';
 import Contact from './Contact';
+import InfoSection2 from './InfoSection2';
 
 const ScrollListener = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -160,6 +161,7 @@ function Navigation() {
       <About />
       <Services />
       <Transactions/>
+      <InfoSection2/>
       <Team />
       <Contact />
     </div>

@@ -5,7 +5,7 @@ const Transactions = () => {
     <section className='transactions bg-info' id='transactions'>
       <div className='row'>
         <div className='col-md-6 offset-md-3'>
-          <h2 className='about-title text-center text-dark my-5'>Transactions</h2>
+          <h2 className='about-title text-center text-dark mt-6'>Transactions</h2>
           <hr class="w-25 mx-auto mb-5 text-black"/>
         </div>
       </div>

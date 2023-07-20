@@ -34,12 +34,14 @@ const ScrollListener = () => {
 };
 
 function Navigation() {
+  const [expanded, setExpanded] = useState(false);
   const isScrolled = ScrollListener();
 
   return (
     <div>
       <Navbar
         expand="lg"
+        expanded={expanded}
         className={`navbar ${
           isScrolled ? "bg-light shadow-sm navbar-light" : "navbar-dark"
         } fixed-top`}
@@ -64,7 +66,7 @@ function Navigation() {
               />
             </Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}/>
           <Navbar.Collapse
             id="basic-navbar-nav"
             className={`${isScrolled ? "" : "dark-bg"}`}
@@ -75,6 +77,7 @@ function Navigation() {
                   isScrolled ? "text-dark" : "text-light"
                 }`}
                 href="#about"
+                
               >
                 <Link
                   activeClass="active-link"
@@ -83,6 +86,7 @@ function Navigation() {
                   smooth={true}
                   offset={-90}
                   duration={500}
+                  onClick={() => setExpanded(false)}
                 >
                   About us
                 </Link>
@@ -100,6 +104,7 @@ function Navigation() {
                   smooth={true}
                   offset={-90}
                   duration={500}
+                  onClick={() => setExpanded(false)}
                 >
                   Services
                 </Link>
@@ -117,6 +122,7 @@ function Navigation() {
                   smooth={true}
                   offset={-90}
                   duration={500}
+                  onClick={() => setExpanded(false)}
                 >
                   Transactions
                 </Link>
@@ -134,6 +140,7 @@ function Navigation() {
                   smooth={true}
                   offset={-90}
                   duration={500}
+                  onClick={() => setExpanded(false)}
                 >
                   Team
                 </Link>
@@ -151,6 +158,7 @@ function Navigation() {
                   smooth={true}
                   offset={-90}
                   duration={500}
+                  onClick={() => setExpanded(false)}
                 >
                   Contact
                 </Link>

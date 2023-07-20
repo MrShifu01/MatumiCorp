@@ -143,6 +143,7 @@ transform: translateX(20%);
     color: var(--bs-dark);
 }
 
+
 @media (max-width: 1000px) {
     .hero-text {
         text-align: center;
@@ -151,4 +152,9 @@ transform: translateX(20%);
         margin: 0;
         padding: 0;
     }
+
+    .dark-bg {
+        background-color: var(--bs-dark); /* Replace with your desired dark background color */
+    }
 }
+

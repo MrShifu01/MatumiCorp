@@ -65,7 +65,7 @@ function Navigation() {
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav" className={`${isScrolled ? "" : "dark-bg"}`}>
             <Nav className="ms-auto pt-3">
               <Nav.Link
                 className={`text-uppercase ${

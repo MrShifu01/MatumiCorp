@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 
 const Hero = () => {
   return (
-    <div className='hero-container'>
+    <div className='hero-container' id='hero'>
       {/* Container for the background image */}
       <div className='hero-image'></div>
       <div className='hero-overlay'></div>

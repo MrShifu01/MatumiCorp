@@ -34,28 +34,28 @@ const Contact = () => {
             </div>
             <form className="form" name="contact" netlify>
               <div className="mb-5">
-                <label className="form-label text-white">Name</label>
                 <input
                   type="text"
                   className="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
                   name="name"
+                  placeholder='Enter Name'
                 />
               </div>
 
               <div className="mb-5">
-                <label className="form-label text-white">Email</label>
                 <input
                   name="email"
                   type="email"
                   className="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  placeholder='Enter Email'
                 />
               </div>
 
               <div className="mb-5">
-                <label className="form-label text-white">Message</label>
                 <textarea
                   name="message"
                   className="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white "
+                  placeholder='Enter Message'
                 ></textarea>
               </div>
 

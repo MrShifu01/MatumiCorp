@@ -69,7 +69,7 @@ function Navigation() {
             <Nav className="ms-auto pt-3">
               <Nav.Link
                 className={`text-uppercase ${
-                  isScrolled ? "text-primary" : "text-light"
+                  isScrolled ? "text-dark" : "text-light"
                 }`}
                 href="#about"
               >
@@ -85,8 +85,8 @@ function Navigation() {
                 </Link>
               </Nav.Link>
               <Nav.Link
-                className={`text-primary text-uppercase ${
-                  isScrolled ? "text-primary" : "text-light"
+                className={`text-dark text-uppercase ${
+                  isScrolled ? "text-dark" : "text-light"
                 }`}
                 href="#services"
               >
@@ -102,8 +102,8 @@ function Navigation() {
                 </Link>
               </Nav.Link>
               <Nav.Link
-                className={`text-primary text-uppercase ${
-                  isScrolled ? "text-primary" : "text-light"
+                className={`text-dark text-uppercase ${
+                  isScrolled ? "text-dark" : "text-light"
                 }`}
                 href="#Transactions"
               >
@@ -119,8 +119,8 @@ function Navigation() {
                 </Link>
               </Nav.Link>
               <Nav.Link
-                className={`text-primary text-uppercase ${
-                  isScrolled ? "text-primary" : "text-light"
+                className={`text-dark text-uppercase ${
+                  isScrolled ? "text-dark" : "text-light"
                 }`}
                 href="#Team"
               >
@@ -136,8 +136,8 @@ function Navigation() {
                 </Link>
               </Nav.Link>
               <Nav.Link
-                className={`text-primary text-uppercase ${
-                  isScrolled ? "text-primary" : "text-light"
+                className={`text-dark text-uppercase ${
+                  isScrolled ? "text-dark" : "text-light"
                 }`}
                 href="#Team"
               >

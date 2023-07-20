@@ -143,6 +143,22 @@ transform: translateX(20%);
     color: var(--bs-dark);
 }
 
+.card-img-top {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.contact-input:focus {
+    outline: none;
+    border: none;
+}
 
 @media (max-width: 1000px) {
     .hero-text {

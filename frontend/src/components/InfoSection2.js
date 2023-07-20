@@ -6,7 +6,7 @@ const InfoSection2 = () => {
         <div className='container'>
             <div className='row'>
                 <div className='col mx-auto text-center'>
-                    <h4 className='text-light my-4'>We take full responsibility for the origination, facilitation & execution of all M&A transactions & maximise execution success by running an efficient & highly targeted transaction process.</h4>
+                    <h4 className='text-light my-4'>We take complete ownership of the origination, facilitation, and execution of all M&A transactions, ensuring optimal success by conducting efficient and highly targeted transaction processes.</h4>
                 </div>
             </div>
         </div>

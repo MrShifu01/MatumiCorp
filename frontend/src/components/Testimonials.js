@@ -1,4 +1,4 @@
-import Carousel from "./Carousel";
+import TestimonialCarousel from "./Carousel";
 import { useRef } from "react";
 import useIntersectionObserver from "./IntersectionObserver";
 
@@ -16,7 +16,7 @@ const Testimonials = () => {
       <div className="container-xxl">
           <div className="row">
             <div className="col-md-8 offset-md-2 mb-6">
-                <Carousel />
+                <TestimonialCarousel />
             </div>
           </div>
       </div>

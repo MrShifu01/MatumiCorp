@@ -158,6 +158,28 @@ body {
   gap: 3rem;
 }
 
+/* Add some padding to the carousel indicators and control bars */
+.carousel-indicators,
+.carousel-control-prev,
+.carousel-control-next {
+  bottom: 20px; /* Adjust this value to change the vertical position */
+}
+
+/* Position the carousel indicators horizontally centered */
+.carousel-indicators {
+  transform: translateY(250%);
+}
+
+/* Position the previous and next control bars horizontally centered */
+.carousel-control-prev {
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+.carousel-control-next {
+  left: 100%;
+}
+
 @media (max-width: 767px) {
   .footer-wrapper {
     gap: 1.5rem;

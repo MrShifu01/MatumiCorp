@@ -1,5 +1,5 @@
 import React from 'react'
-import Modal from '../components/transactions/Modal'
+import Modal from '../components/transactions/modal'
 
 const TransactionsPage = () => {
   return (

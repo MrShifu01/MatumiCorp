@@ -1,12 +1,15 @@
-import React from 'react';
+import { useRef } from "react";
+import useIntersectionObserver from "./IntersectionObserver";
 
 const Team = () => {
+  const h2Ref = useRef();
+  const isIntersecting = useIntersectionObserver(h2Ref, { threshold: 0.5 });
   return (
     <section className='team bg-light' id='team'>
       <div className='container'>
         <div className='row'>
           <div className='col-md-6 offset-md-3'>
-            <h2 className='about-title text-center text-dark mt-6'>Team</h2>
+            <h2 ref={h2Ref} className={`about-title text-center text-dark mt-6 invisible-h2 ${isIntersecting ? 'animate-slide-in' : ''}`}>Team</h2>
             <hr className="w-25 mx-auto mb-5 text-black" />
           </div>
         </div>

@@ -1,6 +1,9 @@
-import React from 'react';
+import { useRef } from "react";
+import useIntersectionObserver from "./IntersectionObserver";
 
 const Contact = () => {
+  const h2Ref = useRef();
+  const isIntersecting = useIntersectionObserver(h2Ref, { threshold: 0.5 });
 
   const address = "The Reserve, 54 Melville Rd, Illovo, Johannesburg"
 
@@ -10,7 +13,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-md-8 offset-md-2">
             <div className="text-center mb-5">
-              <h2 className="about-title text-uppercase fw-bold text-light">Contact</h2>
+              <h2 ref={h2Ref} className={`about-title text-light invisible-h2 ${isIntersecting ? 'animate-slide-in' : ''}`}>Contact</h2>
               <hr className="w-25 mx-auto text-secondary" />
               <p>
                 <strong>Tel:</strong> (011) 283 7700
@@ -60,7 +63,7 @@ const Contact = () => {
               </div>
 
               <div className="d-grid">
-                <button type="submit" className="btn btn-lg btn-dark">
+                <button type="submit" className="btn btn-lg btn-dark shadow">
                   Submit
                 </button>
               </div>

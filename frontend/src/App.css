@@ -89,9 +89,8 @@ body {
 }
 
 .about-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
-  font-weight: bold;
 }
 
 .about-list {
@@ -137,6 +136,24 @@ body {
   box-shadow: none !important;
 }
 
+.invisible-h2 {
+  visibility: hidden;
+}
+
+.animate-slide-in {
+  visibility: visible;
+  animation: fade-in-left 1s ease-in-out both;
+}
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .footer-wrapper {
   gap: 3rem;
 }

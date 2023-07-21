@@ -24,7 +24,7 @@ const Hero = () => {
             offset={-90} // Offset to adjust the scrolling position, you can change this as needed
             duration={500} // Duration of the scroll animation
           >
-            <button className='btn btn-lg btn-primary mt-2' variant="light" size="lg">
+            <button className='btn btn-lg btn-primary mt-2 shadow' variant="light" size="lg">
               Learn More
             </button>
           </Link>

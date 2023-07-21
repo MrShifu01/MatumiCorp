@@ -1,13 +1,18 @@
-import React from 'react'
+import useIntersectionObserver from "./IntersectionObserver"
+import { useRef } from 'react';
 
 const About = () => {
-  return (
+    const h2Ref = useRef();
+    const isIntersecting = useIntersectionObserver(h2Ref, { threshold: 0.5 });
+    return (
     <section className='about bg-white' id='about'>
         <div className='container-fluid'>
             <div className='row  pt-6'>
                 <div className='col-md-6 offset-md-3'>
-                    <h2 className='about-title text-center text-dark'>History</h2>
+                    <h2 ref={h2Ref} className={`about-title text-center text-dark invisible-h2 ${isIntersecting ? 'animate-slide-in' : ''}`}>About Us</h2>
                     <hr class="w-25 mx-auto mb-5"/>
+                    <h4>History</h4>
+                    <hr class="w-25 mb-5"/>
                     <p>The company was founded in 2000 by Jane Ashburner and Patrick Glyn.</p>
 
                     <p><strong>Professional Team: </strong>We have a highly experienced, professional team of M&amp;A specialists whose expertise includes business
@@ -26,8 +31,8 @@ const About = () => {
                     <p><strong>Referrals: </strong>Our excellent execution rate and strong relationship with clients have enabled Matumi to thrive over the years
                         based purely on referrals and repeat business from satisfied clients.</p>
 
-                    <h2 className='about-title text-center mt-6 text-dark'>Why Matumi</h2>
-                    <hr class="w-25 mx-auto mb-5"/>
+                    <h4 className='mt-5'>Why Matumi</h4>
+                    <hr class="w-25 mb-5"/>
                     <ul className='about-list'>
                         <li className='about-list-item'>In-depth pre-engagement analysis of the client’s business and transaction objectives and how realistic and
                             achievable those objectives are and what, if anything, can be done to improve value before going to market

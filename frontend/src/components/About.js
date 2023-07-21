@@ -5,8 +5,8 @@ const About = () => {
     const h2Ref = useRef();
     const isIntersecting = useIntersectionObserver(h2Ref, { threshold: 0.5 });
     return (
-    <section className='about bg-white' id='about'>
-        <div className='container-fluid'>
+    <section className='about bg-light' id='about'>
+        <div className='container'>
             <div className='row  pt-6'>
                 <div className='col-md-6 offset-md-3'>
                     <h2 ref={h2Ref} className={`about-title text-center text-dark invisible-h2 ${isIntersecting ? 'animate-slide-in' : ''}`}>About Us</h2>

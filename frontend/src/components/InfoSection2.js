@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const InfoSection2 = () => {
   return (
@@ -11,7 +12,7 @@ const InfoSection2 = () => {
             </div>
             <div className='row'>
                 <div className='col-md-6 offset-md-3 mx-auto text-center pb-5'>
-                  <button className='btn btn-primary shadow btn-lg my-4'>View Previous Transactions</button>
+                  <Link to='/transactions' className='btn btn-primary shadow btn-lg my-4'>View Previous Transactions</Link>
                 </div>
             </div>
 

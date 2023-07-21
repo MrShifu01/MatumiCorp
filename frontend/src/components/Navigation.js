@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-scroll'
+import { Link as LinkRouter } from 'react-router-dom';
 import Hero from './Hero';
 import About from './About';
 import InfoSection1 from './InfoSection1';
@@ -72,6 +73,9 @@ function Navigation() {
             className={`${isScrolled ? "" : "dark-bg"}`}
           >
             <Nav className="ms-auto pt-3">
+              <Nav.Link>
+                <LinkRouter className='btn nav-button btn-primary shadow' to="/transactions">TRANSACTIONS</LinkRouter>
+              </Nav.Link>
               <Nav.Link
                 className={`text-uppercase ${
                   isScrolled ? "text-dark" : "text-light"
@@ -163,6 +167,7 @@ function Navigation() {
                   Contact
                 </Link>
               </Nav.Link>
+
             </Nav>
           </Navbar.Collapse>
         </div>

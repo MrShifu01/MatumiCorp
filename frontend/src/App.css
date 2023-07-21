@@ -84,6 +84,10 @@ body {
   margin: 0 auto;
 }
 
+.nav-button {
+  transform: translateY(-25%);
+}
+
 .heading {
   font-size: 4rem;
 }

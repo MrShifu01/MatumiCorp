@@ -5,7 +5,7 @@ import Hero from './Hero';
 import About from './About';
 import InfoSection1 from './InfoSection1';
 import Services from './Services';
-import Transactions from './Transactions';
+import Testimonials from './Testimonials';
 import Team from './Team';
 import Contact from './Contact';
 import InfoSection2 from './InfoSection2';
@@ -113,18 +113,18 @@ function Navigation() {
                 className={`text-dark text-uppercase ${
                   isScrolled ? "text-dark" : "text-light"
                 }`}
-                href="#Transactions"
+                href="#testimonials"
               >
                 <Link
                   activeClass="active-link"
-                  to="transactions"
+                  to="testimonials"
                   spy={true}
                   smooth={true}
                   offset={-90}
                   duration={500}
                   onClick={() => setExpanded(false)}
                 >
-                  Transactions
+                  Testimonials
                 </Link>
               </Nav.Link>
               <Nav.Link
@@ -171,7 +171,7 @@ function Navigation() {
       <InfoSection1 />
       <About />
       <Services />
-      <Transactions />
+      <Testimonials />
       <InfoSection2 />
       <Team />
       <Contact />
